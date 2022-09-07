@@ -1,0 +1,39 @@
+.header {
+  background-color: #1E1E1E;
+  padding: 22px 0;
+  margin-bottom: 22px;
+  border-radius: 20px;
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 90px;
+  }
+  &-logo {
+    img {
+      width: 50px;
+    }
+  }
+}
+
+.nav {
+  flex: 1;
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 40px;
+
+    li > a {
+      color: gray;
+    }
+
+    li > a:active {
+      color: red
+    }
+
+    li > a:hover {
+      color: red
+    }
+  }
+}
