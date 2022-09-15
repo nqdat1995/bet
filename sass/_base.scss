@@ -3,14 +3,50 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
-  color: $gray;
-  max-width: 1600px;
+  color: #fff;
+  //max-width: 1600px;
   margin: 0 auto;
-  background-color: #161616;
+  //background-color: #161616;
+  background-color: $darkerblue;
 }
 
 .container {
-  max-width: 1470px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+a {
+  color: #fff;
+  &:hover {
+    color: $pink;
+  }
+}
+
+.button {
+  color: #fff;
+  background-color: $lightblue;
+  border-radius: 100px;
+  cursor: pointer;
+
+  &-small {
+    padding: 12px 24px;
+  }
+  &-medium {
+    padding: 14px 30px;
+  }
+  &-large {
+    padding: 16px 30px;
+    font-weight: 600;
+    font-size: larger;
+  }
+}
+
+.maincontent {
+  padding-top: 200px;
+  margin-bottom: 120px;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0 24px;
 }

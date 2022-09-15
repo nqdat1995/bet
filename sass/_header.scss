@@ -1,39 +1,47 @@
 .header {
-  background-color: #1E1E1E;
-  padding: 22px 0;
-  margin-bottom: 22px;
-  border-radius: 20px;
-  &-main {
+  background: url("../images/hero.jpg") no-repeat center center;
+  .header-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0 90px;
-  }
-  &-logo {
-    img {
-      width: 50px;
+    flex-direction: column;
+
+    .menu {
+      padding-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 58px;
+      padding-bottom: 130px;
+      font-size: larger;
+      font-weight: 600;
+
+      .logo {
+        height: 45px;
+      }
+      .nav {
+        flex: 1;
+
+        .nav-items {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 0 28px;
+        }
+      }
+      .action {
+        display: flex;
+        align-items: center;
+        gap: 0 22px;
+      }
     }
-  }
-}
-
-.nav {
-  flex: 1;
-  ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0 40px;
-
-    li > a {
-      color: gray;
+    .page-name {
+      padding-bottom: 44px;
+      font-size: 70px;
+      font-weight: bold;
     }
-
-    li > a:active {
-      color: red
-    }
-
-    li > a:hover {
-      color: red
+    .page-link {
+      padding-bottom: 274px;
+      font-size: 20px;
+      font-weight: 600;
     }
   }
 }
