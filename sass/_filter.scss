@@ -4,6 +4,7 @@
   align-items: center;
   background-color: $blue;
   border-radius: 20px;
+  width: 100%;
 
   position: absolute;
   top: 0;
@@ -22,6 +23,7 @@
     gap: 0 24px;
 
     input {
+      width: 100%;
       background-color: transparent;
       outline: none;
       box-shadow: 0px;
