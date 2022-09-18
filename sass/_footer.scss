@@ -1,0 +1,27 @@
+.footer {
+  background: url("../images/hero.jpg") no-repeat center left;
+
+  .webinfo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 30px;
+    padding-top: 280px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid $darkblue;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .social {
+    padding: 30px 0;
+  }
+
+  @include maxw(1023px) {
+    .webinfo {
+      padding-top: 100px;
+    }
+  }
+
+  @include maxw(767px) {
+  }
+}

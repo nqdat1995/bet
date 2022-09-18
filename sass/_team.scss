@@ -32,4 +32,10 @@
       margin-right: 10px;
     }
   }
+
+  @include maxw(1023px) {
+  }
+
+  @include maxw(767px) {
+  }
 }

@@ -49,4 +49,23 @@ a {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 0 24px;
+
+  @include maxw(1023px) {
+    padding-top: 24px;
+    margin-bottom: 50px;
+
+    grid-template-columns: 1fr;
+  }
+
+  @include maxw(767px) {
+  }
+
+  .left {
+    @include maxw(1023px) {
+      display: none;
+    }
+
+    @include maxw(767px) {
+    }
+  }
 }

@@ -4,7 +4,6 @@
   align-items: center;
   background-color: $blue;
   border-radius: 20px;
-  min-width: 1360px;
 
   position: absolute;
   top: 0;
@@ -27,10 +26,17 @@
       outline: none;
       box-shadow: 0px;
       border: 1px solid #5ab0db;
-      padding: 28px 20px;
+      padding: 12% 10%;
       border-radius: 10px;
       color: #fff;
       font-size: 20px;
     }
+  }
+
+  @include maxw(1023px) {
+    display: none;
+  }
+
+  @include maxw(767px) {
   }
 }

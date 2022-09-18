@@ -92,7 +92,18 @@ a:hover {
   grid-template-columns: 1fr 3fr;
   gap: 0 24px;
 }
-
+@media screen and (max-width: 1023px) {
+  .maincontent {
+    padding-top: 24px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .maincontent .left {
+    display: none;
+  }
+}
 .header {
   background: url("../images/hero.jpg") no-repeat center center;
 }
@@ -133,9 +144,24 @@ a:hover {
   font-weight: bold;
 }
 .header .header-content .page-link {
-  padding-bottom: 274px;
+  padding-bottom: 15%;
   font-size: 20px;
   font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .header .header-content .menu {
+    padding-bottom: 60px;
+    justify-content: flex-start;
+  }
+  .header .header-content .menu .nav {
+    display: none;
+  }
+  .header .header-content .menu .action {
+    display: none;
+  }
+  .header .header-content .page-name {
+    font-size: 35px;
+  }
 }
 
 main .container {
@@ -148,7 +174,6 @@ main .container {
   align-items: center;
   background-color: #3A2490;
   border-radius: 20px;
-  min-width: 1360px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -170,12 +195,16 @@ main .container {
   outline: none;
   box-shadow: 0px;
   border: 1px solid #5ab0db;
-  padding: 28px 20px;
+  padding: 12% 10%;
   border-radius: 10px;
   color: #fff;
   font-size: 20px;
 }
-
+@media screen and (max-width: 1023px) {
+  .filter {
+    display: none;
+  }
+}
 .team {
   display: flex;
   flex-direction: column;
@@ -207,11 +236,11 @@ main .container {
   width: 50px;
   margin-right: 10px;
 }
-
 .match-items {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px 0;
+  margin-bottom: 60px;
 }
 .match-item {
   border-radius: 20px;
@@ -261,6 +290,62 @@ main .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.pagination .pagemove {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #3A2490;
+  cursor: pointer;
+}
+.pagination .pagemove:hover {
+  background-color: #591BE0;
+}
+.pagination .pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+}
+.pagination .pages .page-number {
+  padding: 14px 18px;
+  border-radius: 50%;
+  background-color: #3A2490;
+  cursor: pointer;
+}
+.pagination .pages .page-number:hover {
+  background-color: #591BE0;
+}
+
+.footer {
+  background: url("../images/hero.jpg") no-repeat center left;
+}
+.footer .webinfo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0 30px;
+  padding-top: 280px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #281B6A;
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer .social {
+  padding: 30px 0;
+}
+@media screen and (max-width: 1023px) {
+  .footer .webinfo {
+    padding-top: 100px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

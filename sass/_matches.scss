@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px 0;
+    margin-bottom: 60px;
   }
 
   &-item {
@@ -59,5 +60,43 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 40px;
+  font-weight: bold;
+  font-size: 20px;
+
+  .pagemove {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $blue;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $lightblue;
+    }
+  }
+
+  .pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+
+    .page-number {
+      padding: 14px 18px;
+      border-radius: 50%;
+      background-color: $blue;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $lightblue;
+      }
+    }
   }
 }
