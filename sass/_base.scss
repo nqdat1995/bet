@@ -40,6 +40,14 @@ a {
     font-weight: 600;
     font-size: larger;
   }
+
+  @include maxw(767px) {
+    &-large {
+      padding: 6px 12px;
+      font-weight: 600;
+      font-size: larger;
+    }
+  }
 }
 
 .maincontent {

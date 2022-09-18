@@ -61,6 +61,41 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @include maxw(767px) {
+    &-items {
+      gap: 12px 0;
+    }
+
+    &-info {
+      padding: 60px 20px;
+
+      .countdown {
+        padding: 18px 20px;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: $green;
+        border-radius: 20px;
+      }
+    }
+
+    &-team {
+      .name {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .location {
+        margin-bottom: 15px;
+      }
+      img {
+        width: 60px;
+      }
+    }
+
+    &-actions {
+      padding: 10px 12px;
+    }
+  }
 }
 
 .pagination {
@@ -98,5 +133,10 @@
         background-color: $lightblue;
       }
     }
+  }
+
+  @include maxw(767px) {
+    gap: 0 16px;
+    font-size: 12px;
   }
 }

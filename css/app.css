@@ -84,6 +84,13 @@ a:hover {
   font-weight: 600;
   font-size: larger;
 }
+@media screen and (max-width: 767px) {
+  .button-large {
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: larger;
+  }
+}
 
 .maincontent {
   padding-top: 200px;
@@ -293,6 +300,34 @@ main .container {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .match-items {
+    gap: 12px 0;
+  }
+  .match-info {
+    padding: 60px 20px;
+  }
+  .match-info .countdown {
+    padding: 18px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #1E623B;
+    border-radius: 20px;
+  }
+  .match-team .name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .match-team .location {
+    margin-bottom: 15px;
+  }
+  .match-team img {
+    width: 60px;
+  }
+  .match-actions {
+    padding: 10px 12px;
+  }
+}
 
 .pagination {
   display: flex;
@@ -325,6 +360,12 @@ main .container {
 }
 .pagination .pages .page-number:hover {
   background-color: #591BE0;
+}
+@media screen and (max-width: 767px) {
+  .pagination {
+    gap: 0 16px;
+    font-size: 12px;
+  }
 }
 
 .footer {
